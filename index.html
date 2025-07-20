@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00521a48f6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi👋 , I'm <span>Saurabh Singh</span></h1>
+            </div>
+            <a href="images/My CV Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <!------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I'm Saurabh Singh, a passionate Computer Science Engineering student & currently pursuing my
+                        B.Tech from Delhi Technical Campus (DTC). It is affiliated with GGSIPU & approved by AICTE and
+                        COA. I'm a web developer dedicated to building responsive, user-friendly websites, applications
+                        and Full-Stack projects and I'm fascinated by how technology can solve real - world problems. I
+                        love turning ideas into real-world digital experiences and always learning new things to improve
+                        my skills and keep up with the latest web technologies. I'm constantly expanding my knowledge in
+                        areas like Data Science, Machine Learning & Software Engineering. My goal is to build innovative
+                        solutions that make me a real impact, and I'm excited to connect with professionals in the tech
+                        industry to learn and grow. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('languages')">Languages</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Full Stack Developer Intern</span><br>Future Interns | Jun 2025 - Present</li>
+                            <li><span>Organizer</span><br>Algozenith DTC | Nov 2024 - Present</li>
+                            <li><span>Treasurer</span><br>Computer Engineering Student's Technical Association (CESTA) |
+                                Sep 2024 - Present</li>
+                            <li><span>Social Media Head</span><br>Indus Rise Club | Dec 2023 - Mar 2024</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology - B.Tech in Computer Science | 2023-2027</span><br>Delhi
+                                Technical Campus, GGSIPU | Grade: Ongoing 8.9 CGPA</li>
+                            <li><span>Bachelor of Science - BS in Data Science and Applications |
+                                    2023-2027</span><br>Indian Institute of Technology, Madras</li>
+                            <li><span>12th BSEB - Intermediate of Science (I.Sc) | 2021-2023</span><br>Sachchidanand
+                                Sinha College | Grade: 78%</li>
+                            <li><span>10th CBSE - Matriculation | 2020 - 2021</span><br>B.L Indo Anglian Public School |
+                                Grade: 83%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>1st Place - Manthan Kriti 2K25 (Open Project Day) | May 2025</span><br>Delhi
+                                Technical Campus (DTC), GGSIPU</li>
+                            <li><span>Contributor - Student Ambassodor Program | Jan 2025</span><br>E-Cell, IIT Guwahati
+                            </li>
+                            <li><span>Participate in GDSC WoW and GDSC-TechByte | 2024</span><br>Google Developer
+                                Students Clubs (GDSC)</li>
+                            <li><span>Participate in Hack The Mountains 5.0 (30 Hours Hybrid Hackathon) | Sep
+                                    2024</span><br>Marwadi University, Rajkot</li>
+                            <li><span>Advance Diploma in Computer Application Programming (ADCAP) |
+                                    2022-2023</span><br>IT Vision Systems PVT. LTD. | Grade: 82%, A+</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="languages">
+                        <ul>
+                            <li><span>English</span></li>
+                            <li><span>Hindi</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------skills-------->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>HTML | CSS | JavaScript | Bootstrap</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Analyst</h2>
+                    <p>Power BI | Tableau | Excel</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Programming Languages</h2>
+                    <p>Java | C/C++ | Python</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Tools & Others</h2>
+                    <p>Git | GitHub | Tally</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------projects----------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/Glide Gazer.png">
+                    <div class="layer">
+                        <h3>Glide Gazer</h3>
+                        <p>A modern car showcase platform built with React and motion effects. Smooth filtering and 3D
+                            transitions.<br>Tech Stack:</br>Python, React, Framer Motion, Tailwind CSS
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/PDA Simulator.png">
+                    <div class="layer">
+                        <h3>PDA Simulator for Palindrome Recognition</h3>
+                        <p> This project detects whether a given word
+                            or number is a palindrome and offers a practical demonstartion of how PDAs use stack
+                            memory.<br>Tech Stack:</br>HTML, CSS, JavaScript, D3.js
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>saurabhsinghrajput2628@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7667556763</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/saurabh-singh-577439329"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Saurabh Singh</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
